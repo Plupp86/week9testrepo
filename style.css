@@ -1,0 +1,21 @@
+body {
+    background-color:gray;
+    
+}
+
+table {
+    background-color: burlywood;
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+td.spacer {
+    width: 20%;
+    background-color: gray;
+
+}
