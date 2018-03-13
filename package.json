@@ -1,0 +1,26 @@
+{
+  "name": "videoreview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "dependencies": {
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "less": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "lessc style.less style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plupp86/week9testrepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plupp86/week9testrepo/issues"
+  },
+  "homepage": "https://github.com/Plupp86/week9testrepo#readme"
+}

@@ -1,21 +1,22 @@
 body {
-    background-color:gray;
-    
+  background-color: gray;
 }
-
 table {
-    background-color: burlywood;
-    width: 100%;
-    border: none;
-    border-collapse: collapse;
+  background-color: burlywood;
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
 }
-
 td {
-    padding: 5px;
+  padding: 5px;
 }
-
 td.spacer {
-    width: 20%;
-    background-color: gray;
-
+  width: 20%;
+  background-color: gray;
+}
+span.star.filled {
+  color: black;
+}
+span.star {
+  color: gray;
 }
