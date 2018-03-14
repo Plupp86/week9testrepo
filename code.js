@@ -2,7 +2,7 @@
 var $ = require("jquery");
 
 
-$(document).on('click',".btn",function(){
+$(document).on("click",".btn",function(){
     movieFunc();
 });
 
@@ -10,7 +10,7 @@ $(document).on('click',".btn",function(){
 function movieFunc() {
 
     let title = document.getElementById("MovieTitle");
-    title.innerHTML = "Inception";
+    title.innerHTML = "Interception";
     
     let poster = document.getElementById("MoviePoster")
     poster.setAttribute("src","http://dizw242ufxqut.cloudfront.net/images/product/movie/dvd/image0/inception-7528624-frntl.jpg")
@@ -38,18 +38,19 @@ function movieFunc() {
 
 var savedRating = 0;
 
-$(document).on('click','.star',function(){
+$(document).on("click",".star",function(){
     savedRating = this.getAttribute("value");
     changeRating(this.getAttribute("value"));
     });
 
-    $(document).on('mouseover','.star',function(){
+    $(document).on("mouseover",".star",function(){
         changeRating(this.getAttribute("value"));
         });
     
-$(document).on('mouseout','.star',function(){
+$(document).on("mouseout",".star",function(){
         changeRating(savedRating);
         });
+
         
 
 function changeRating(rating){
