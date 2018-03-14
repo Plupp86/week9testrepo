@@ -1,3 +1,12 @@
+
+var $ = require("jquery");
+
+
+$(document).on('click',".btn",function(){
+    movieFunc();
+});
+
+
 function movieFunc() {
 
     let title = document.getElementById("MovieTitle");
@@ -9,8 +18,11 @@ function movieFunc() {
     let infotext = document.getElementById("MoviePlot");
     infotext.innerHTML = "A very meta movie aout dreams within dreams. And then there was a whole bunch of shooting, not really sure how that fit into the picture.";
     
+   
+    $("#ListOfActors").empty();
+
     let listOfActors = document.getElementById("ListOfActors")
-    
+
     let leo = document.createElement("li");
     leo.innerHTML = "Leonardo DiCaprio";
     listOfActors.appendChild(leo);
@@ -35,16 +47,10 @@ $(document).on('click','.star',function(){
         changeRating(this.getAttribute("value"));
         });
     
-    $(document).on('mouseout','.star',function(){
+$(document).on('mouseout','.star',function(){
         changeRating(savedRating);
         });
         
-
-
-
-
-
-
 
 function changeRating(rating){
     rating = Number(rating);
@@ -59,3 +65,5 @@ function changeRating(rating){
         $("#star"+i).addClass("filled");
     }
 }
+
+console.log("looooogggggg");
